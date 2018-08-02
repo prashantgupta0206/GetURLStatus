@@ -2,19 +2,18 @@ const XLSX = require('xlsx');
 const sc = require('status-check');
 
 let headers = ["URL", "Status"];
-let input;
 let resArray = [];
 let finalstatusArray = [];
 
 (function checkStatus() {
     sc.testLinkStatus("input.csv", function (data) {
-        input = JSON.stringify(data);
-        for (let i = 0; i <= input.length - 1; i++) {
-            resArray.push(input[i].url);
-            resArray.push(input[i].statusCode);
+        for (let i = 0; i <= data.length - 1; i++) {
+            resArray.push(data[i].url);
+            resArray.push(data[i].statusCode);
             finalstatusArray.push(resArray);
             resArray = [];
         }
+        console.log(finalstatusArray);
         createSheet();
     }, true);
 })();
