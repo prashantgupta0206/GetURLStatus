@@ -1,0 +1,24 @@
+{
+  "name": "geturlstatus",
+  "version": "1.0.0",
+  "description": "GetURLStatus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashantgupta0206/GetURLStatus.git"
+  },
+  "author": "Prashant Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prashantgupta0206/GetURLStatus/issues"
+  },
+  "homepage": "https://github.com/prashantgupta0206/GetURLStatus#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "status-check": "0.0.17",
+    "xlsx": "^0.13.3"
+  }
+}
